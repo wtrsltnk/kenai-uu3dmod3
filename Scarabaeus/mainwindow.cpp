@@ -7,6 +7,11 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+
+     // Comments added
+    scene.addText("Hello, world!");
+    ui->graphicsView->setScene(&scene);
+
 }
 
 
@@ -25,4 +30,15 @@ void MainWindow::changeEvent(QEvent *e)
     default:
         break;
     }
+}
+
+void MainWindow::addCurve(){
+
+     // Not used any more
+     //scene.addText("Hello, world!");
+     //QGraphicsView view(&scene);
+     //view.show();
+     //ui->graphicsView->setScene(&scene);
+     //ui->graphicsView->repaint();
+
 }
