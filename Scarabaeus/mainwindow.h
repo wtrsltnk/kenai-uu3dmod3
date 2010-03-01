@@ -13,8 +13,11 @@ class MainWindow : public QMainWindow {
 public:
     MainWindow(QWidget *parent = 0);
     ~MainWindow();
-    void addCurve();
+    void calculateCurve();
+    void drawCurve(double xPos, double yPos);
     QGraphicsScene scene;
+    int oldXpos;
+    int oldYpos;
 
 
 protected:
