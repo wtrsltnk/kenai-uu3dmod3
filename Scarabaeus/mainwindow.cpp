@@ -13,7 +13,6 @@ MainWindow::MainWindow(QWidget *parent) :
      // Comments added
    // scene.addText("Hello, world!");
    // scene.addLine(0,0,10,0, QPen( "black" ));
-    ui->graphicsView->setScene(&scene);
     oldXpos = 0;
     oldYpos = 0;
 
