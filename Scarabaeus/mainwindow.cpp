@@ -10,6 +10,13 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
 
+    QPolygonF poly;
+    poly << QPointF(0, 0) << QPointF(100, 0) << QPointF(100, 100) << QPointF(0, 100);
+
+    QPen pen(QColor(0, 255, 0));
+    QBrush brush(QColor(255, 0, 0), Qt::NoBrush);
+    ui->gvScarabaeus_1->setScene(&this->scene);
+    ui->gvScarabaeus_1->scene()->addPolygon(poly, pen, brush);
      // Comments added
    // scene.addText("Hello, world!");
    // scene.addLine(0,0,10,0, QPen( "black" ));

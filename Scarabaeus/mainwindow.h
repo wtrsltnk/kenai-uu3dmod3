@@ -16,6 +16,7 @@ public:
     void calculateCurve();
     void drawCurve(double xPos, double yPos);
     QGraphicsScene scene;
+
     int oldXpos;
     int oldYpos;
 
@@ -23,6 +24,10 @@ public:
 protected:
     void changeEvent(QEvent *e);
 
+protected:
+    QGraphicsScene scarabaeusScene;
+    QGraphicsScene cardinalScene;
+    QGraphicsScene combiScene;
 
 private:
     Ui::MainWindow *ui;
