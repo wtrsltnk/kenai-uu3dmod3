@@ -1,10 +1,10 @@
 /********************************************************************************
-** Form generated from reading ui file 'mainwindow.ui'
+** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created: Tue Mar 2 12:46:33 2010
-**      by: Qt User Interface Compiler version 4.5.2
+** Created: Thu Mar 4 11:05:26 2010
+**      by: Qt User Interface Compiler version 4.6.2
 **
-** WARNING! All changes made in this file will be lost when recompiling ui file!
+** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
 
 #ifndef UI_MAINWINDOW_H
@@ -72,7 +72,7 @@ public:
         centralWidget->setObjectName(QString::fromUtf8("centralWidget"));
         gridLayout = new QGridLayout(centralWidget);
         gridLayout->setSpacing(6);
-        gridLayout->setMargin(11);
+        gridLayout->setContentsMargins(11, 11, 11, 11);
         gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
         tabWidget = new QTabWidget(centralWidget);
         tabWidget->setObjectName(QString::fromUtf8("tabWidget"));
@@ -80,7 +80,7 @@ public:
         tab->setObjectName(QString::fromUtf8("tab"));
         gridLayout_2 = new QGridLayout(tab);
         gridLayout_2->setSpacing(6);
-        gridLayout_2->setMargin(11);
+        gridLayout_2->setContentsMargins(11, 11, 11, 11);
         gridLayout_2->setObjectName(QString::fromUtf8("gridLayout_2"));
         gvScarabaeus_1 = new QGraphicsView(tab);
         gvScarabaeus_1->setObjectName(QString::fromUtf8("gvScarabaeus_1"));
@@ -106,7 +106,7 @@ public:
         tab_3->setObjectName(QString::fromUtf8("tab_3"));
         gridLayout_3 = new QGridLayout(tab_3);
         gridLayout_3->setSpacing(6);
-        gridLayout_3->setMargin(11);
+        gridLayout_3->setContentsMargins(11, 11, 11, 11);
         gridLayout_3->setObjectName(QString::fromUtf8("gridLayout_3"));
         gvCardinal_2 = new QGraphicsView(tab_3);
         gvCardinal_2->setObjectName(QString::fromUtf8("gvCardinal_2"));
@@ -132,7 +132,7 @@ public:
         tab_2->setObjectName(QString::fromUtf8("tab_2"));
         gridLayout_4 = new QGridLayout(tab_2);
         gridLayout_4->setSpacing(6);
-        gridLayout_4->setMargin(11);
+        gridLayout_4->setContentsMargins(11, 11, 11, 11);
         gridLayout_4->setObjectName(QString::fromUtf8("gridLayout_4"));
         gvCombi_3 = new QGraphicsView(tab_2);
         gvCombi_3->setObjectName(QString::fromUtf8("gvCombi_3"));
@@ -216,7 +216,6 @@ public:
         lblA_3->setText(QApplication::translate("MainWindow", "Parameter A", 0, QApplication::UnicodeUTF8));
         lblTension_3->setText(QApplication::translate("MainWindow", "Tension", 0, QApplication::UnicodeUTF8));
         tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("MainWindow", "Assignment 3", 0, QApplication::UnicodeUTF8));
-        Q_UNUSED(MainWindow);
     } // retranslateUi
 
 };

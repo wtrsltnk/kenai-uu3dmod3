@@ -5,11 +5,9 @@ TARGET = Scarabaeus
 TEMPLATE = app
 SOURCES += main.cpp \
     mainwindow.cpp \
-    ../scarabaeus.cpp \
-    scarabaeus.cpp \
-    cardinal.cpp
+    cardinal.cpp \
+    scarabaeus.cpp
 HEADERS += mainwindow.h \
-    ../scarabaeus.h \
-    scarabaeus.h \
-    cardinal.h
+    cardinal.h \
+    scarabaeus.h
 FORMS += mainwindow.ui
