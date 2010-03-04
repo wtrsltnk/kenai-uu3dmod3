@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include <QtGui>
+#include "customscene.h"
 
 namespace Ui {
     class MainWindow;
@@ -26,7 +27,7 @@ protected:
 
 protected:
     QGraphicsScene scarabaeusScene;
-    QGraphicsScene cardinalScene;
+    CustomScene cardinalScene;
     QGraphicsScene combiScene;
 
 private:

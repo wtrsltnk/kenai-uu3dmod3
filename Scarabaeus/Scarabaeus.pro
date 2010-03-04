@@ -6,8 +6,12 @@ TEMPLATE = app
 SOURCES += main.cpp \
     mainwindow.cpp \
     cardinal.cpp \
-    scarabaeus.cpp
+    scarabaeus.cpp \
+    custompoint.cpp \
+    customscene.cpp
 HEADERS += mainwindow.h \
     cardinal.h \
-    scarabaeus.h
+    scarabaeus.h \
+    custompoint.h \
+    customscene.h
 FORMS += mainwindow.ui

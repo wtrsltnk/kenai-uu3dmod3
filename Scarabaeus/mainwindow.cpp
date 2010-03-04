@@ -1,5 +1,6 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include "custompoint.h"
 #include <math.h>
 
 #define PI 3.14159265
@@ -10,19 +11,21 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    QPolygonF poly;
-    poly << QPointF(0, 0) << QPointF(100, 0) << QPointF(100, 100) << QPointF(0, 100);
+    ui->gvScarabaeus_1->setScene(&this->cardinalScene);
+    ui->gvCardinal_2->setScene(&this->cardinalScene);
 
-    QPen pen(QColor(0, 255, 0));
-    QBrush brush(QColor(255, 0, 0), Qt::NoBrush);
-    ui->gvScarabaeus_1->setScene(&this->scene);
-    ui->gvScarabaeus_1->scene()->addPolygon(poly, pen, brush);
-     // Comments added
-   // scene.addText("Hello, world!");
-   // scene.addLine(0,0,10,0, QPen( "black" ));
+    this->ui->gvCardinal_2->setRenderHints(QPainter::Antialiasing | QPainter::SmoothPixmapTransform | QPainter::TextAntialiasing);
+
+    this->cardinalScene.addCustomPoint(new CustomPoint(QPointF(0.0f, 0.0f)));
+    this->cardinalScene.addCustomPoint(new CustomPoint(QPointF(5.0f, 2.0f)));
+    this->cardinalScene.addCustomPoint(new CustomPoint(QPointF(7.0f, 5.0f)));
+    this->cardinalScene.addCustomPoint(new CustomPoint(QPointF(5.0f, 8.0f)));
+    this->cardinalScene.addCustomPoint(new CustomPoint(QPointF(1.0f, 15.0f)));
+
+    this->cardinalScene.setSceneRect(0, 0, 10, 10);
+
     oldXpos = 0;
     oldYpos = 0;
-
 }
 
 
@@ -99,7 +102,7 @@ void MainWindow::drawCurve(double xPos, double yPos){
      //view.show();
      //ui->graphicsView->setScene(&scene);
      //ui->graphicsView->repaint();
-    scene.addLine(oldXpos,oldYpos,xPos,yPos, QPen( "black" ));
+    //scene.addLine(oldXpos,oldYpos,xPos,yPos, QPen( "black" ));
     oldXpos = xPos;
     oldYpos = yPos;
     //scene.addLine()
