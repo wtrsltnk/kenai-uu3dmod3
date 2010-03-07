@@ -17,9 +17,7 @@ QVector<QPointF> Scarabaeus::generatePoints()
 {
     QVector<QPointF> result;
 
-    /// TODO: implement point generation!
-
-    // Formule
+    // Formula
     // r(theta)= cos(2theta) - (a cos(theta))
     // domein van -phi t/m phi
 
@@ -33,7 +31,9 @@ QVector<QPointF> Scarabaeus::generatePoints()
         opp = sin (theta) * hyp;
         adj = cos (theta) * hyp;
 
-        QPointF point( opp, adj);
+        /// TODO: Validate if this is correct
+        //QPointF point( opp, adj);
+        QPointF point( adj, opp);
         result.push_back(point);
 
     }
