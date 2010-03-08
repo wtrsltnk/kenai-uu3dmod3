@@ -11,7 +11,7 @@ public:
     Cardinal(QVector<QPointF> controlPoints, double tension);
     virtual ~Cardinal();
 
-    void addControlPoint(QPointF& point);
+    void addControlPoint(QPointF point);
     void removeControlPoint(QPointF& point);
     void clearControlPoints();
     QVector<QPointF> getControlPoints() { return this->controlPoints; }

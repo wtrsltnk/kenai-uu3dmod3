@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created: Sun 7. Mar 18:06:00 2010
+** Created: Mon 8. Mar 20:05:20 2010
 **      by: Qt User Interface Compiler version 4.6.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -98,6 +98,7 @@ public:
 
         dsbA_1 = new QDoubleSpinBox(tab);
         dsbA_1->setObjectName(QString::fromUtf8("dsbA_1"));
+        dsbA_1->setValue(1);
 
         gridLayout_2->addWidget(dsbA_1, 1, 2, 1, 1);
 
@@ -199,7 +200,7 @@ public:
 
         retranslateUi(MainWindow);
 
-        tabWidget->setCurrentIndex(0);
+        tabWidget->setCurrentIndex(1);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
