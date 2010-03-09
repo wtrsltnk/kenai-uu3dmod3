@@ -26,6 +26,10 @@ QVector<QPointF> Cardinal::generatePoints()
 {
     QVector<QPointF> result;
 
+    /// Make sure there are enough control points
+    if (controlPoints.size() < 4)
+        return result;
+
     for (int i = 1; i <= (controlPoints.size() -3); i ++ ){
         // Cardinal spline estimated derivative
 
