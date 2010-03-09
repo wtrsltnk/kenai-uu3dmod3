@@ -8,10 +8,14 @@ SOURCES += main.cpp \
     cardinal.cpp \
     scarabaeus.cpp \
     custompoint.cpp \
-    customscene.cpp
+    scarabaeusscene.cpp \
+    cardinalscene.cpp \
+    combiscene.cpp
 HEADERS += mainwindow.h \
     cardinal.h \
     scarabaeus.h \
     custompoint.h \
-    customscene.h
+    scarabaeusscene.h \
+    cardinalscene.h \
+    combiscene.h
 FORMS += mainwindow.ui

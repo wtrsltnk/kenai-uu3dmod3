@@ -2,7 +2,7 @@
 #include <QGraphicsSceneMouseEvent>
 
 CustomPoint::CustomPoint(const QPointF &pos)
-    : QGraphicsRectItem(-5, -5, 10, 10), dragging(false)
+    : QGraphicsRectItem(-0.5f, -0.5f, 1.0f, 1.0f), dragging(false)
 {
     this->setPos(pos);
 }

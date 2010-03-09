@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created: Mon 8. Mar 20:05:20 2010
+** Created: Tue Mar 9 13:41:07 2010
 **      by: Qt User Interface Compiler version 4.6.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -98,6 +98,9 @@ public:
 
         dsbA_1 = new QDoubleSpinBox(tab);
         dsbA_1->setObjectName(QString::fromUtf8("dsbA_1"));
+        dsbA_1->setMinimum(-10);
+        dsbA_1->setMaximum(10);
+        dsbA_1->setSingleStep(0.25);
         dsbA_1->setValue(1);
 
         gridLayout_2->addWidget(dsbA_1, 1, 2, 1, 1);
@@ -125,6 +128,8 @@ public:
 
         dsbTension_2 = new QDoubleSpinBox(tab_3);
         dsbTension_2->setObjectName(QString::fromUtf8("dsbTension_2"));
+        dsbTension_2->setMinimum(-99.99);
+        dsbTension_2->setSingleStep(0.1);
 
         gridLayout_3->addWidget(dsbTension_2, 1, 2, 1, 1);
 
@@ -151,6 +156,11 @@ public:
 
         dsbSampleDensity_3 = new QDoubleSpinBox(tab_2);
         dsbSampleDensity_3->setObjectName(QString::fromUtf8("dsbSampleDensity_3"));
+        dsbSampleDensity_3->setDecimals(3);
+        dsbSampleDensity_3->setMinimum(0.04);
+        dsbSampleDensity_3->setMaximum(5);
+        dsbSampleDensity_3->setSingleStep(0.01);
+        dsbSampleDensity_3->setValue(0.4);
 
         gridLayout_4->addWidget(dsbSampleDensity_3, 1, 2, 1, 1);
 
@@ -165,6 +175,10 @@ public:
 
         dsbA_3 = new QDoubleSpinBox(tab_2);
         dsbA_3->setObjectName(QString::fromUtf8("dsbA_3"));
+        dsbA_3->setMinimum(-10);
+        dsbA_3->setMaximum(10);
+        dsbA_3->setSingleStep(0.25);
+        dsbA_3->setValue(1);
 
         gridLayout_4->addWidget(dsbA_3, 2, 2, 1, 1);
 
@@ -179,6 +193,8 @@ public:
 
         dsbTension_3 = new QDoubleSpinBox(tab_2);
         dsbTension_3->setObjectName(QString::fromUtf8("dsbTension_3"));
+        dsbTension_3->setMinimum(-99.99);
+        dsbTension_3->setSingleStep(0.1);
 
         gridLayout_4->addWidget(dsbTension_3, 3, 2, 1, 1);
 
@@ -189,7 +205,7 @@ public:
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QString::fromUtf8("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 600, 21));
+        menuBar->setGeometry(QRect(0, 0, 600, 25));
         MainWindow->setMenuBar(menuBar);
         mainToolBar = new QToolBar(MainWindow);
         mainToolBar->setObjectName(QString::fromUtf8("mainToolBar"));
@@ -200,7 +216,7 @@ public:
 
         retranslateUi(MainWindow);
 
-        tabWidget->setCurrentIndex(1);
+        tabWidget->setCurrentIndex(2);
 
 
         QMetaObject::connectSlotsByName(MainWindow);

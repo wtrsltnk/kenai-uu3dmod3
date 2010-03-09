@@ -18,7 +18,7 @@
     <item row="0" column="0">
      <widget class="QTabWidget" name="tabWidget">
       <property name="currentIndex">
-       <number>1</number>
+       <number>2</number>
       </property>
       <widget class="QWidget" name="tab">
        <attribute name="title">
@@ -50,6 +50,15 @@
         </item>
         <item row="1" column="2">
          <widget class="QDoubleSpinBox" name="dsbA_1">
+          <property name="minimum">
+           <double>-10.000000000000000</double>
+          </property>
+          <property name="maximum">
+           <double>10.000000000000000</double>
+          </property>
+          <property name="singleStep">
+           <double>0.250000000000000</double>
+          </property>
           <property name="value">
            <double>1.000000000000000</double>
           </property>
@@ -86,7 +95,14 @@
          </widget>
         </item>
         <item row="1" column="2">
-         <widget class="QDoubleSpinBox" name="dsbTension_2"/>
+         <widget class="QDoubleSpinBox" name="dsbTension_2">
+          <property name="minimum">
+           <double>-99.989999999999995</double>
+          </property>
+          <property name="singleStep">
+           <double>0.100000000000000</double>
+          </property>
+         </widget>
         </item>
        </layout>
       </widget>
@@ -119,7 +135,23 @@
          </widget>
         </item>
         <item row="1" column="2">
-         <widget class="QDoubleSpinBox" name="dsbSampleDensity_3"/>
+         <widget class="QDoubleSpinBox" name="dsbSampleDensity_3">
+          <property name="decimals">
+           <number>3</number>
+          </property>
+          <property name="minimum">
+           <double>0.040000000000000</double>
+          </property>
+          <property name="maximum">
+           <double>5.000000000000000</double>
+          </property>
+          <property name="singleStep">
+           <double>0.010000000000000</double>
+          </property>
+          <property name="value">
+           <double>0.400000000000000</double>
+          </property>
+         </widget>
         </item>
         <item row="2" column="0">
          <spacer name="horizontalSpacer_4">
@@ -142,7 +174,20 @@
          </widget>
         </item>
         <item row="2" column="2">
-         <widget class="QDoubleSpinBox" name="dsbA_3"/>
+         <widget class="QDoubleSpinBox" name="dsbA_3">
+          <property name="minimum">
+           <double>-10.000000000000000</double>
+          </property>
+          <property name="maximum">
+           <double>10.000000000000000</double>
+          </property>
+          <property name="singleStep">
+           <double>0.250000000000000</double>
+          </property>
+          <property name="value">
+           <double>1.000000000000000</double>
+          </property>
+         </widget>
         </item>
         <item row="3" column="0">
          <spacer name="horizontalSpacer_5">
@@ -165,7 +210,14 @@
          </widget>
         </item>
         <item row="3" column="2">
-         <widget class="QDoubleSpinBox" name="dsbTension_3"/>
+         <widget class="QDoubleSpinBox" name="dsbTension_3">
+          <property name="minimum">
+           <double>-99.989999999999995</double>
+          </property>
+          <property name="singleStep">
+           <double>0.100000000000000</double>
+          </property>
+         </widget>
         </item>
        </layout>
       </widget>
@@ -179,7 +231,7 @@
      <x>0</x>
      <y>0</y>
      <width>600</width>
-     <height>21</height>
+     <height>25</height>
     </rect>
    </property>
   </widget>

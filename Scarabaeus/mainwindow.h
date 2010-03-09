@@ -3,7 +3,9 @@
 
 #include <QMainWindow>
 #include <QtGui>
-#include "customscene.h"
+#include "cardinalscene.h"
+#include "scarabaeusscene.h"
+#include "combiscene.h"
 
 namespace Ui {
     class MainWindow;
@@ -14,18 +16,11 @@ class MainWindow : public QMainWindow {
 public:
     MainWindow(QWidget *parent = 0);
     ~MainWindow();
-   // void calculateCurve();
-  //  void drawCurve(double xPos, double yPos);
-    //QGraphicsScene scene;
-
 
 protected:
-    void changeEvent(QEvent *e);
-
-protected:
-    QGraphicsScene scarabaeusScene;
-    CustomScene cardinalScene;
-    QGraphicsScene combiScene;
+    ScarabaeusScene scarabaeusScene;
+    CardinalScene cardinalScene;
+    CombiScene combiScene;
 
 private:
     Ui::MainWindow *ui;
